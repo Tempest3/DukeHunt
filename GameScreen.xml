@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+        <title>Duke Hunt</title>
+        <style>
+            a { color: yellow;  }
+            body {  background-color: black; margin: 0; color: yellow;  }
+        </style>
+
+</head>
+<body>
+  <center>
+  <img src='img/dukehuntsmall.png' /> <br/>
+     <table width='100%'>
+            <tr>
+                <td valign='bottom' align='right'><a href='?action=view'>Update World</a> </td>
+                <td align='center' style='color:yellow'>
+                    Turns: {TURNS}  | Undiscovered Dukes: {HIDDEN}
+                </td>
+                <td valign='bottom' align='left'><a href='DukeHunt.ashx'>New Game</a></td>
+            </tr>
+     </table>
+     <svg xmlns='http://www.w3.org/2000/svg'   xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' 
+               width='{WIDTH}px' height='{HEIGHT}px'>
+
+            <rect x='0' y='0' width='{WIDTH}' height='{HEIGHT}' fill='lightgreen' />
+            {SVGDATA}
+
+     </svg>
+     <br />
+     <a href="DukeHunt.ashx?action=cheat" style='color: #222222'>Cheat Mode</a>
+     <br />
+  </center>
+  <audio src='sounds/{AUDIO}' autoplay='true' />
+</body>
+</html>

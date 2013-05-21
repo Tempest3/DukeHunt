@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+    <title>Duke Hunt</title>
+    <style type='text/css'>
+        body { 
+            background: black; margin: 0;
+            color: white;
+        }
+    </style>    
+    <script>
+        function getsize(form) {
+            form.width.value = document.documentElement.clientWidth
+            form.height.value = document.documentElement.clientHeight
+        }
+    </script>
+</head>
+<body> 
+    <center>
+    
+    <img src='img/dukehunt.gif' />
+    <br/> <br/>
+    <p>
+        Mysterious creatures (known simply as "Dukes") disguise themselves as shrubbery and run around having a jolly time. If discovered, they shed their disguise and laugh innocently at any human that happens to see them. </br>
+        Fortunately for the hunter, there are a couple of tricks to finding dukes... and some of them are the dukes' own doing! Watch carefully for movement, since real shrubbery does not run about.</br>
+        Also, be especially aware of the dukes' exploding decoys -- although the dukes designed them to destroy vegitation, they can easily backfire and destroy decoys, vegitation, and dukes alike!
+    </p>
+    
+    <form  action='DukeHunt.ashx' onsubmit='getsize(this)'>
+      Number of Dukes <img src='img/duke.gif'/>: <input type='text' name='numdukes' value='3'/><br/>
+      <input type='submit' name='action' value='Start Game'/>
+      <input type='hidden' name='width' />
+      <input type='hidden' name='height' />
+    </form>
+    </br>
+    </br>
+        <a style=color:FFFFFF href='About.html'>About 'Duke Hunt'</a>
+
+
+    </center>
+    <audio src='sounds/EASTERN_SITAR_BRIGHT_1.ogg' autoplay='true' />
+</body>
+</html>
